@@ -38,4 +38,4 @@ if __name__ == "__main__":
     aoc = AOC(year="2023")
     aoc.load_days() 
     aoc.run_day("1")  
-    #aoc.run_day("2")  
+    aoc.run_day("2")  
