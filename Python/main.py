@@ -29,10 +29,10 @@ class AOC:
             input_filename = f"{str(pathlib.Path(__file__).parent.resolve())}/{self.year}/Day{day_number}/input.txt"
             day_instance = self.days[day_number](filename=input_filename) 
             print(f"AdventOfCode\n\nEvent: {self.year}\nDay: {day_number}\n\n")
-            print(f"Part-1: {day_instance.part1()}")
-            print(f"Part-2: {day_instance.part2()}")
+            print(f"Part-1: {day_instance.calculate_part1()}")
+            print(f"Part-2: {day_instance.calculate_part2()}")
         else:
-            print(f"Tag {day_number} nicht gefunden.")
+            print(f"Day {day_number} not found.")
 
 if __name__ == "__main__":
     aoc = AOC(year="2023")
