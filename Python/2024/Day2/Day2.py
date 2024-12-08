@@ -18,7 +18,7 @@ class Day2:
             raise
 
 
-    def is_safe_report(self, report: list) -> str:
+    def is_safe_report(self, report: list) -> bool:
         increasing = decreasing = safe = True
 
         for key, level in enumerate(report[1:], start=1):
